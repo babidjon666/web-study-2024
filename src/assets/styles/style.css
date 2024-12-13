@@ -2,48 +2,34 @@
 @import "./fonts.css";
 @import "./utils.css";
 
-.test {
-    color: yellow !important;
-}
-
-.test {
-    color: red !important;
-}
-
-/* Стили для всех параграфов */
-.paragraph {
+.p-text {
     font-size: 16px;
     line-height: 26px;
     color: #1F3F68;
 }
 
-/* Стили для заголовка h1 */
 .header-h1 {
     font-size: 64px;
     color: #1F3F68;
 }
 
-/* Стили для заголовка h2 (страница контакты) */
 .header-h2 {
     font-weight: 500;
     font-size: 44px;
     text-align: center;
 }
 
-/* Стили для заголовка h3 */
 .header-h3 {
     font-size: 36px;
     text-align: center;
 }
 
-/* Стили для заголовков h4 */
 .header-h4 {
     font-size: 20px;
     line-height: 30px;
     color: #1F3F68;
 }
 
-/* Стили для полей ввода (input, textarea) */
 .input-field {
     border: 1px solid #356EAD;
     box-sizing: border-box;
@@ -51,59 +37,69 @@
     opacity: 0.4;
 }
 
-/* Стили для кнопки отправки формы */
-.submit-button {
-    background: linear-gradient(90deg, #4A75E6 30%, #8C55E9 90%);
+/* .submit-button {
+    background: #5A98D0;
     box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
     border-radius: 10px;
-    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
     text-align: center;
     color: #FFFFFF;
     text-transform: uppercase;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-}
+} */
 
-/* Стили для формы на странице контактов */
-.form-contact {
-    background-image: url('https://applescoop.org/image/wallpapers/mac/57054490347614497-63609289318916589.png');
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.contact-form {
+    background-image: url('../img/background.jpg');
     background-size: cover;
     background-position: center;
-    padding: 20px;
 }
 
-.breadcrumbs {
-    display: -ms-flexbox;
+.submit-button {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+
+    font-family: "Inter", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    
+    border: 0;
+    border-radius: 15px;
+    padding: 15px 50px;
+    background: linear-gradient(135deg, rgb(74, 117, 230), rgb(110, 100, 232), rgb(140, 85, 233));
+}
+
+.navigation-menu {
+    background: linear-gradient(rgb(224, 235, 235), rgb(158, 192, 193), rgb(71, 136, 137));
+}
+
+.navigation-menu ul {
     display: flex;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    padding: 0;
-    margin-bottom: 1rem;
-    margin-top: 0;
     list-style: none;
-    background-image: linear-gradient(to bottom, #e9f0f2, #387f7f);
-    border-radius: 0 1.5rem 1.5rem 0;
-    overflow: hidden;
-}
     
-.breadcrumbs-item{
-    padding: .5rem 1rem;
-    border-radius: 0 1.5rem 1.5rem 0;
-    border-right: 2px solid white;
-    box-shadow: 1.5px 0 1.5px black;
-}
-    
-a{
-    color: black;
-    text-decoration: none;
+    font-size: 18px;
+
+    margin: 0;
+    padding: 0;
 }
 
+.navigation-menu li {
+    position: relative;
+
+    border-right: medium solid #000000;
+    border-radius: 22px;
+
+    padding: 10px 25px;
+    box-shadow: -2px 0px 0px 0px rgba(255, 255, 255) inset;
+
+    display: flex;
+    align-items: center;
+}
+
+.navigation-menu li a {
+    text-decoration: none;
+    color: #000000;
+}
