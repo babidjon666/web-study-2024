@@ -4,6 +4,7 @@
 @import "./header.css";
 @import "./startBlock.css";
 @import "./footer.css";
+@import "./developBlock.css";
 
 body {
     background: #f2f4f7;
