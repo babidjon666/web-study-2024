@@ -1,25 +1,26 @@
-.developBlock{
+.develop-block {
     background-color: #ffffff;
+
     margin-left: -108px;
     margin-right: -108px;
     padding: 80px 108px;
-    width: 100%;
     display: flex;
     gap: 128px;
 }
 
-.developInfo{
+.left {
     width: 600px;
+
     display: grid;
     gap: 34px;
 }
 
-.developContent{
+.left-content {
     display: grid;
     gap: 32px;
 }
 
-.developContent-title{
+.left-title {
     font-family: "Inter Bold", sans-serif;
     font-weight: 700;
     font-size: 36px;
@@ -28,7 +29,7 @@
     color: #101828;
 }
 
-.developContent-text{
+.left-text {
     font-family: "SF Pro Text Medium", sans-serif;
     font-weight: 500;
     font-size: 15px;
@@ -37,13 +38,14 @@
     color: #101828;
 }
 
-.languages{
+.technologies {
     width: 496px;
+
     display: grid;
     gap: 16px;
 }
 
-.developType{
+.tech-subtitle {
     font-family: "SF Pro Display Semibold", sans-serif;
     font-weight: 600;
     font-size: 20px;
@@ -52,7 +54,7 @@
     color: #101828;
 }
 
-.languagesList{
+.tech-list {
     font-family: "SF Pro Text Regular", sans-serif;
     font-weight: 400;
     font-size: 17px;
@@ -61,27 +63,37 @@
     color: #344054;
 }
 
-.languagesList span{
+.tech-list span {
     color: #2d66ee;
 }
 
-.chooseTech{
-    
-}
-
-.chooseTech-list{
+.dev-list {
     display: grid;
 }
 
-.listItem{
+.dev-list-item {
     padding: 12px 0;
+
     display: flex;
     gap: 12px;
+
     align-items: center;
     width: fit-content;
 }
 
-.listItem a:hover{
+.dev-list-item a{
+    font-family: "SF Pro Display Regular", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.38px;
+    color: #1d2939;
+
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.dev-list-item a:hover{
     font-family: "SF Pro Display Semibold", sans-serif;
     font-weight: 600;
     color: #101828;
@@ -89,31 +101,17 @@
     border-bottom: solid 1px #2d66ee;
 }
 
-.listItem a{
-    font-family: "SF Pro Display Regular", sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: 0.38px;
-    color: #1d2939;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.itemColor{
-    color: #2d66ee
-}
-
 @media screen and (max-width: 1224px) {
-    .developBlock {
+    .develop-block {
         margin-left: -80px;
         margin-right: -80px;
+    
         padding: 80px;
     }
 }
 
 @media screen and (max-width: 1023px) {
-    .developBlock {
+    .develop-block {
         margin-left: -32px;
         margin-right: -32px;
     
@@ -122,28 +120,28 @@
         gap: 82px;
     }
 
-    .developInfo {
+    .left {
         margin-left: 40px;
         width: 320px;
 
         gap: 32px;
     }
 
-    .developContent {
+    .left-content, .technologies {
         width: 320px;
     } 
 
-    .developContent-title {
+    .left-title {
         font-size: 28px;
     }
 
-    .languagesList {
+    .tech-list {
         font-size: 14px;
     }
 }
 
 @media screen and (max-width: 767px) {
-    .developBlock {
+    .develop-block {
         margin-left: -16px;
         margin-right: -16px;
     
@@ -153,11 +151,11 @@
         gap: 32px;
     }
 
-    .developInfo {
+    .left {
         margin-left: initial;
     }
 
-    .languagesList {
+    .tech-list {
         font-size: 14px;
 
         width: 278px;
